@@ -38,6 +38,8 @@ To run this program :
 - Just `make`
 - `./42sh` to run
 
+![power supply full model](./Ressources/Prompt.png)
+
 >Note : Program was built on MacOS Mojave and I know there is some workaround to do to compile on Linux as well (mostly for syscalls)
 
 ## Ressources
@@ -54,4 +56,114 @@ Alongside with a lot of other documentations like [GCC](https://gcc.gnu.org/onli
 
 ## Features
 
+### Basic Features
 
+- Prompt
+- Command execution with arguments
+- $PATH managment
+- Homemade error handling (no errno), and process/shell return values
+- Tab and Space in prompt managment
+
+### Separators and Redirections
+
+- Redirections and fd aggregation : `>` , `>>` , `<`, `<<`, `>&`, `<&`
+- Pipes : `|`
+- Commands separator : `;`
+- Logical operator `&&` and `||`
+
+### Internal variables
+
+- Shell internal variables handling
+- Variable assignation `name=value`
+- Variable export to environement via `export` built-in
+- Local variable assignation, `ls PWD=~/`
+- Special parameters managment : `$?`, `$$`, `$!`, `$-`, `$0`
+
+### Line Editing
+
+- Complete line editing managment *(Multiple lines, Copy, Paste, home, end, arrows, etc ...)*
+- Sub-prompt managment
+
+### Job Control
+
+- Job control managment
+- `jobs`, `fg`, `bg`, `&` operand, built-in to interact with jobs
+
+### Signals
+
+- Signal managment
+- Correct return value managment upon singals
+
+### Inhibitors
+
+- `"` double quotes, `'` simple quotes and `\` backslash inhibitors managment
+
+### Expansion
+
+- Simple expansion with `${}` and `$`
+- Tilde expansion
+- `${parameter:-word}`
+- `${parameter:=word}`
+- `${parameter:?word}`
+- `${parameter:+word}`
+- `${#parameter}`
+- `${parameter%}`
+- `${parameter%%}`
+- `${parameter#}`
+- `${parameter##}`
+
+### Arithmetic expansion `$((...))`
+
+- Post and Pre Increment and Decrement with `++` and `--`
+- Addition and Substraction `+` and `-`
+- Multiplication, Division, Modulo with `*`, `/`, `%`
+- Comparison `<=`, `>=`, `<`, `>`
+- Equality or not `==` and `!=`
+- Logical AND & OR with `&&` , `||`
+- Brackets and parantheses `{}`, `[]`, `()`
+
+### History Managment
+
+- Full history managment
+- Expansion `!!`
+- Expansion `!word`
+- Expansion `!number`
+- Expansion `!-number`
+- Incremental research with `Ctrl + R`
+- Up and down arrow research in history
+- History file save
+- `fc` Built-in
+
+### Contextual auto-completion
+
+- Command and Built-in completion
+- File completion
+- Internal variables completion
+
+### Hash table
+
+- Hash table for binaries and built-ins
+- Use of [HashMap lib](https://github.com/Nrechati/HashMap)
+- `hash` built-in according to POSIX standards
+
+### Batch mode
+
+- Command execution with `-c` in batch mode
+- Piped command execution in batch mode
+
+### Built-in according to POSIX Standards (except for set and unset)
+
+- **cd**
+- **echo**
+- **exit**
+- **type**
+- **set**
+- **unset**
+- **export**
+- **jobs**
+- **fg**
+- **bg**
+- **fc**
+- **hash**
+- **pwd**
+- **test**
