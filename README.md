@@ -1,12 +1,12 @@
-# UNIX Project : 42sh, a UNIX Shell based on POSIX standards
+# UNIX Project: 42sh, a UNIX Shell based on POSIX standards
 
-This project is my **Final Project** at **42** for the **UNIX System** specialization. Me and my team worked on this projet for 5 months toward the validation of our first specialization : *UNIX System in C*
+This project is my **Final Project** at **42** for the **UNIX System** specialization. Me and my team worked on this project for 5 months toward the validation of our first specialization : *UNIX System in C*
 
 ## Disclaimer
 
-Sources and Build found on this git is a copy of files we turned in for the project validation. I did it so it can be easily clone, make and run regardeless of access to external library and sources. The Codebase was also cleaned for the validation. The downside of this is it doesn't show the original git history. If you are interessted in it, you can check the original project [here](https://github.com/Nrechati/42sh)
+Sources and Build found on this git is a copy of the files we turned in for the project validation. I did it so it can be easily clone, make and run regardless of access to external libraries and sources. The Codebase was also cleaned for the validation. The downside of this is it doesn't show the original git history. If you are interested in it, you can check the original project [here](https://github.com/Nrechati/42sh)
 
-> **Note :** The project on the original won't compile because you won't have access to our LibC implementation submodule. Moreover, a lot of last optimization and codebase fix where done on the repository given to us for the project validation. Thus for anything beside looking at git history, this repository is more reliable than the original.
+> **Note:** The project on the original won't compile because you won't have access to our LibC implementation submodule. Moreover, a lot of last optimization and codebase fix where done on the repository given to us for the project validation. Thus for anything besides looking at git history, this repository is more reliable than the original.
 
 ## Credits
 
@@ -19,16 +19,16 @@ Links to their GitHub page included.
 
 ## Abstract
 
-The goal of this project was to implement a rather complete **UNIX Shell** regarding **POSIX Standards**. During our UNIX System specialization at 42 we had to first get to work with UNIX File system, Shellscript, Signals, Syscall, Shell environnement, Binaries and Built-ins along with a lot of C design patterns. This project was the perfect use case to bring it all together to implement our **own shell using C with no external library or functions, from scratch**.
+The goal of this project was to implement a rather complete **UNIX Shell** regarding **POSIX Standards**. During our UNIX System specialization at 42, we had to first get to work with UNIX File system, Shellscript, Signals, Syscall, Shell Environnement, Binaries and Built-ins along with a lot of C design patterns. This project was the perfect use case to bring it all together to implement our **own shell using C with no external library or functions, from scratch**.
 
-Besides all project requirements we had to implement few library to build our architecture.
+Besides all the project requirements, we had to implement a few libraries to build our architecture.
 - **Hash table** library. Find more [here](https://github.com/Nrechati/HashMap)
-- Our own implementation of **`printf`** as standard one is forbidden by the project. Find more on the `libft` directory of this project.
-- A **State Machine** library for Lexing, Parsing and Execution. Find more on the `libft` directory of this project.
-- A **Vector** library to handle line editing and general string manipulation, as standard one is forbidden by the project. Find more on the `libft` directory of this project.
-- Using our **LibC** implementation , as standard one is forbidden by the project. Find more on the `libft` directory of this project.
+- Our implementation of **`printf`** as the standard one is forbidden by the project. Find more on the `libft` directory of this project.
+- A **State Machine** library for Lexing, Parsing, and Execution. Find more on the `libft` directory of this project.
+- A **Vector** library to handle line editing and general string manipulation, as the standard one is forbidden by the project. Find more on the `libft` directory of this project.
+- Using our **LibC** implementation, as the standard one is forbidden by the project. Find more on the `libft` directory of this project.
 
-> **Note** : For a full understanding of this project, see `Subject_42sh.en.pdf` on this repository
+> **Note**: For a full understanding of this project, see `Subject_42sh.en.pdf` on this repository
 
 ## How to Run
 
@@ -40,11 +40,11 @@ To run this program :
 
 ![power supply full model](./Ressources/Prompt.png)
 
->Note : Program was built on MacOS Mojave and I know there is some workaround to do to compile on Linux as well (mostly for syscalls)
+>**Note**: Program was built on macOS Mojave and I know there is some workaround to do to compile on Linux as well (mostly for syscalls)
 
 ## Ressources
 
-As the project stipulate that the shell has to be based on a **Official POSIX Shell**, we chose **bash --posix** for our own. The project also says that this reference is a starting point and that some features or behaviors can differs from it as long as it is an implementation or architectural choice and not just for convevience.
+As the project stipulates that the shell has to be based on an **Official POSIX Shell**, we chose **bash --posix** for our own. The project also says that this reference is a starting point and that some features or behaviors can differ from it as long as it is an implementation or architectural choice and not just for convenience.
 
 For **POSIX standards**, we mostly relied on :
 - [Unix.com](https://www.unix.com/)
@@ -52,7 +52,7 @@ For **POSIX standards**, we mostly relied on :
 - [The Open Group](https://publications.opengroup.org/)
 - [The Manual of Termcaps](https://www.gnu.org/software/termutils/manual/termcap-1.3/html_mono/termcap.html), for line editing in the shell
 
-Alongside with a lot of other documentations like [GCC](https://gcc.gnu.org/onlinedocs/) one for Lexer/Paser or [American Fuzzy Loop](http://lcamtuf.coredump.cx/afl/) fuzzer for testing.
+Alongside a lot of other documentation like [GCC](https://gcc.gnu.org/onlinedocs/), one for Lexer/Parser or [American Fuzzy Loop](http://lcamtuf.coredump.cx/afl/) fuzzer for testing.
 
 ## Features
 
@@ -60,9 +60,9 @@ Alongside with a lot of other documentations like [GCC](https://gcc.gnu.org/onli
 
 - Prompt
 - Command execution with arguments
-- $PATH managment
+- $PATH management
 - Homemade error handling (no errno), and process/shell return values
-- Tab and Space in prompt managment
+- Tab and Space in prompt management
 
 ### Separators and Redirections
 
@@ -81,12 +81,12 @@ Alongside with a lot of other documentations like [GCC](https://gcc.gnu.org/onli
 
 ### Line Editing
 
-- Complete line editing managment *(Multiple lines, Copy, Paste, home, end, arrows, etc ...)*
-- Sub-prompt managment
+- Complete line editing management *(Multiple lines, Copy, Paste, home, end, arrows, etc ...)*
+- Sub-prompt management
 
 ### Job Control
 
-- Job control managment
+- Job control management
 - `jobs`, `fg`, `bg`, `&` operand, built-in to interact with jobs
 
 ### Signals
@@ -115,22 +115,22 @@ Alongside with a lot of other documentations like [GCC](https://gcc.gnu.org/onli
 ### Arithmetic expansion `$((...))`
 
 - Post and Pre Increment and Decrement with `++` and `--`
-- Addition and Substraction `+` and `-`
+- Addition and Subtraction `+` and `-`
 - Multiplication, Division, Modulo with `*`, `/`, `%`
 - Comparison `<=`, `>=`, `<`, `>`
 - Equality or not `==` and `!=`
 - Logical AND & OR with `&&` , `||`
-- Brackets and parantheses `{}`, `[]`, `()`
+- Brackets and parentheses `{}`, `[]`, `()`
 
-### History Managment
+### History Management
 
-- Full history managment
+- Full history management
 - Expansion `!!`
 - Expansion `!word`
 - Expansion `!number`
 - Expansion `!-number`
 - Incremental research with `Ctrl + R`
-- Up and down arrow research in history
+- Up and down arrow research in the history
 - History file save
 - `fc` Built-in
 
