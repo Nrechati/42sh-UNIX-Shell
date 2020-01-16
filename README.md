@@ -42,9 +42,9 @@ To run this program :
 
 ## Ressources
 
-As the project stipulate that the shell has to be based on a Official POSIX Shell, we chose **bash --posix** for our own. The project also says that this reference is a starting point and that some features or behaviors can differs from it as long as it is an implementation or architectural choice and not just for convevience.
+As the project stipulate that the shell has to be based on a **Official POSIX Shell**, we chose **bash --posix** for our own. The project also says that this reference is a starting point and that some features or behaviors can differs from it as long as it is an implementation or architectural choice and not just for convevience.
 
-For POSIX standards, we mostly relied on :
+For **POSIX standards**, we mostly relied on :
 - [Unix.com](https://www.unix.com/)
 - [GNU.org](https://www.gnu.org/)
 - [The Open Group](https://publications.opengroup.org/)
