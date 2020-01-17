@@ -4,7 +4,7 @@ This project is my **Final Project** at **42** for the **UNIX System** specializ
 
 ## Disclaimer
 
-Sources and Build found on this git is a copy of the files we turned in for the project validation. I did it so it can be easily clone, make and run regardless of access to external libraries and sources. The Codebase was also cleaned for the validation. The downside of this is it doesn't show the original git history. If you are interested in it, you can check the original project [here](https://github.com/Nrechati/42sh)
+Sources and Build found on this git are a copy of the files we turned in for the project validation. I did it so it can be easily clone, make and run regardless of access to external libraries and sources. The Codebase was also cleaned for the validation. The downside of this is it doesn't show the original git history. If you are interested in it, you can check the original project [here](https://github.com/Nrechati/42sh)
 
 > **Note:** The project on the original won't compile because you won't have access to our LibC implementation submodule. Moreover, a lot of last optimization and codebase fix where done on the repository given to us for the project validation. Thus for anything besides looking at git history, this repository is more reliable than the original.
 
