@@ -38,7 +38,7 @@ To run this program :
 - Just `make`
 - `./42sh` to run
 
-![power supply full model](./Ressources/Prompt.png)
+![hello_prompt](./Ressources/Prompt.png)
 
 >**Note**: Program was built on macOS Mojave and I know there is some workaround to do to compile on Linux as well (mostly for syscalls)
 
